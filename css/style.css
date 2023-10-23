@@ -62,18 +62,14 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-li {
+.button-container {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0d53a9;
     color: #fff;
-    padding: 15px 30px;
+    padding: 10px 30px;
     border-radius: 10px;
     font-weight: bold;
-    transition: background-color 0.3s;
-}
 
-button:hover {
-    background-color: blue;
 }
 
 img {
@@ -84,6 +80,9 @@ img {
 
 nav {
     border: 2px solid black;
+    border-radius: 15px;
+    margin: 20px 20px 20px 20px;
+
 }
 
 li {
@@ -95,12 +94,12 @@ li {
 nav a {
     border-color: rgb(255, 115, 0);
     padding: 5px;
-    margin: 20px;
+    margin: 2px;
 }
 
 
 .current {
-    background-color: #2b3f7e;
+    background-color: #b85555;
     font-weight: bold;
     text-decoration: underline;
     border-radius: 10px;

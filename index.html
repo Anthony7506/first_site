@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lightbox.css">
 </head>
 
 <body>
@@ -22,16 +23,28 @@
                 <a href="index.html" class="current">Home (Travel)</a>
                 <a href="pets.html">Pets</a>
                 <a href="recipes.html">Recipes</a>
+                <button id="colorButton">|Click For Fall Theme|</button>
+
             </div>
+
+
         </nav>
 
         <div id="main">
             <div class="grid-container">
                 <div class="grid-item">
+
                     <h2>Paris, France</h2>
-                    <img class="gif-image" src="images/paris_La_Tour_Eiffel.gif" alt="The Eiffel Tower" width="400">
-                    <img id="paris_nonjif_correct2" src="images/paris_nonjif_correct2.png" alt="The Eiffel Tower nonjif"
-                        width="400">
+                    <a href="images/paris_La_Tour_Eiffel.gif" data-lightbox="pics" data-title="The Eiffel Tower">
+                        <img class="gif-image" src="images/paris_La_Tour_Eiffel.gif" alt="The Eiffel Tower" width="400">
+                    </a>
+
+
+                    <a href="images/paris_nonjif_correct2.png" data-lightbox="pics"
+                        data-title="The Eiffel Tower Nonjif">
+                        <img id="paris_nonjif_correct2" src="images/paris_nonjif_correct2.png"
+                            alt="The Eiffel Tower Nonjif" width="400">
+                    </a>
                     <p>Geographical Location: Europe</p>
                     <p>Paris is one of the oldest cities in Europe and the city of romance. With a vast amount of
                         cultural
@@ -43,45 +56,66 @@
                     </p>
 
                     <h3>Photo Gallery</h3>
-                    <div>
-                        <img id="paris_champs_elysees" src="images/paris_champs_elysees.jpg"
-                            alt="Champs Elysées, on a street, slightly cloudy in Paris, France" width="200">
-                    </div>
 
-                    <div>
+                    <a href="images/paris_champs_elysees.jpg" data-lightbox="pics"
+                        data-title="Champs Elysées, on a street, slightly cloudy in Paris, France">
+                        <img id="paris_champs_elysees" src="images/paris_champs_elysees.jpg"
+                            alt="Champs Elysées, on a street, slightly cloudy in Paris, France" width="400">
+                    </a>
+
+
+                    <a href="images/paris_eiffel_tower.jpeg" data-lightbox="pics"
+                        data-title="Eiffel tower in front of a clear blue sky, taller structure in Paris, France">
                         <img id="paris_eiffel_tower" src="images/paris_eiffel_tower.jpeg"
                             alt="Eiffel tower in front of a clear blue sky, taller structure in Paris, France"
-                            width="200">
-                    </div>
+                            width="400">
+                    </a>
 
 
-                    <div>
+
+
+                    <a href="images/paris_notre_dame.jpg" data-lightbox="pics"
+                        data-title="Notre Dame Cathedral with people viewing it in front of a lightly cloudy sky in Paris, France">
                         <img id="paris_notre_dame" src="images/paris_notre_dame.jpg"
                             alt="Notre Dame Cathedral with people viewing it in front of a lightly cloudy sky in Paris, France"
-                            width="200">
-                    </div>
+                            width="400">
+                    </a>
 
 
-                    <div>
+
+
+                    <a href="images/paris_louvre_gallery.jpg" data-lightbox="pics"
+                        data-title="The Louvre Museum lit up in the night in Paris, France">
                         <img id="paris_louvre_gallery" src="images/paris_louvre_gallery.jpg"
-                            alt="The Louvre Museum lit up in the night in Paris, France" width="200">
-                    </div>
+                            alt="The Louvre Museum lit up in the night in Paris, France" width="400">
+                    </a>
 
 
-                    <div>
+
+
+                    <a href="images/paris_palace_of_versailles.jpg" data-lightbox="pics"
+                        data-title="Palace of Versailles with gardens in front of it on a lightly cloudy day in Paris, France">
                         <img id="paris_palace_of_versailles" src="images/paris_palace_of_versailles.jpg"
                             alt=" Palace of Versailles with gardens in front of it on a lightly cloudy day in Paris, France"
-                            width="200">
-                    </div>
-
+                            width="400">
+                    </a>
 
                 </div>
                 <!-- San Francisco, California -->
                 <div class="grid-item">
 
                     <h2>San Francisco, California</h2>
-                    <img class="gif-image" src="images/San_Francisco_bridge.gif" alt="Golden Gate Bridge" width="400">
-                    <img src="images/San_Francisco_bridge.jpeg" alt="Golden Gate Bridge nonjif" width="400">
+
+                    <a href="images/San_Francisco_bridge.gif" data-lightbox="pics" data-title="Golden Gate Bridge">
+                        <img class="gif-image" src="images/San_Francisco_bridge.gif" alt="Golden Gate Bridge"
+                            width="400">
+                    </a>
+
+
+                    <a href="images/San_Francisco_bridge.jpeg" data-lightbox="pics"
+                        data-title="Golden Gate Bridge nonjif">
+                        <img src="images/San_Francisco_bridge.jpeg" alt="Golden Gate Bridge nonjif" width="400">
+                    </a>
                     <p><strong>Geographical Location:</strong> North America</p>
                     <p>San Francisco is a great location to visit with many landmarks, including the Golden Gate Bridge
                         and
@@ -97,22 +131,38 @@
                         the bay and its wildlife.</p>
 
                     <h3>Photo Gallery</h3>
-                    <img src="images/San_Francisco_Alcatraz.jpeg" alt="Alcatraz Island" width="200">
+
+
+                    <a href="images/San_Francisco_Alcatraz.jpeg" data-lightbox="pics" data-title="Alcatraz Island">
+                        <img src="images/San_Francisco_Alcatraz.jpeg" alt="Alcatraz Island" width="400">
+                    </a>
+
                     <p>Image of the Alcatraz prison.<br>Alcatraz island</p>
 
-                    <img src="images/San_Francisco_Lombard.jpeg" alt="Lombard Street" width="200">
+
+                    <a href="images/San_Francisco_Lombard.jpeg" data-lightbox="pics" data-title="Lombard Street">
+                        <img src="images/San_Francisco_Lombard.jpeg" alt="Lombard Street" width="400">
+                    </a>
                     <p>Picture of Lombard street in San Francisco.<br>Lombard Street</p>
 
-                    <img src="images/San_Francisco_painted_ladies.jpeg" alt="Painted Ladies" width="200">
+                    <a href="images/San_Francisco_painted_ladies.jpeg" data-lightbox="pics" data-title="Painted Ladies">
+                        <img src="images/San_Francisco_painted_ladies.jpeg" alt="Painted Ladies" width="400">
+                    </a>
                     <p>Image of the homes known as the Painted Ladies. A row of colorful homes that are adjacent to a
                         park.
                         They
                         are known for being in Full House.<br>The Painted Ladies</p>
 
-                    <img src="images/San_Francisco_street.jpeg" alt="Steep Hill" width="200">
+                    <a href="images/San_Francisco_street.jpeg" data-lightbox="pics" data-title="Steep Hill">
+                        <img src="images/San_Francisco_street.jpeg" alt="Steep Hill" width="400">
+                    </a>
+
                     <p>Steep hill in San Francisco with cars on it.<br>Hill in San Francisco</p>
 
-                    <img src="images/San_Francisco_palace.jpeg" alt="Palace of Fine Arts" width="200">
+                    <a href="images/San_Francisco_palace.jpeg" data-lightbox="pics" data-title="Palace of Fine Arts">
+                        <img src="images/San_Francisco_palace.jpeg" alt="Palace of Fine Arts" width="400">
+                    </a>
+
                     <p>Image of the Palace of Fine Arts in San Francisco, a large structure surrounded by a pleasant
                         park.<br>The Palace of Fine Arts in San Francisco</p>
 
@@ -122,6 +172,9 @@
             </div>
         </div>
     </main>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="gallery.js"></script>
+
 </body>
 
 </html>

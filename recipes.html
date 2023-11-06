@@ -7,6 +7,7 @@
     <title>Recipes</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lightbox.css">
 </head>
 
 <body>
@@ -19,6 +20,7 @@
             <a href="index.html">Home (Travel)</a>
             <a href="pets.html">Pets</a>
             <a href="recipes.html" class="current">Recipes</a>
+            <button id="colorButton">|Click For Fall Theme|</button>
         </div>
     </nav>
     <main>
@@ -30,7 +32,10 @@
                     <p>Origin: India</p>
                     <p>Source: <a href="https://tasty.co/recipe/homemade-chicken-tikka-masala">Tasty.co</a></p>
                     <p>Category: Main Dish</p>
-                    <img src="images/tikkamasala_1.jpg" alt="Chicken Tikka Masala" width="400">
+                    <a href="images/tikkamasala_1.jpg" data-lightbox="tikkamasala" data-title="Chicken Tikka Masala">
+                        <img src="images/tikkamasala_1.jpg" alt="Chicken Tikka Masala" width="400">
+                    </a>
+
                     <p>Chicken Tikka Masala is a delicious dish to have for dinner. It has a nice mixture of savory and
                         sweet flavors and is best served with Naan and rice and vegetables.</p>
 
@@ -84,14 +89,27 @@
                     <p>Enjoy!</p>
 
                     <h3>Additional Food Images</h3>
-                    <img src="images/tikkamasala_3.jpg" alt="Raw chicken with many spices on it.">
+
+                    <a href="images/tikkamasala_3.jpg" data-lightbox="tikkamasala"
+                        data-title="Raw chicken with many spices">
+                        <img src="images/tikkamasala_3.jpg" alt="Raw chicken with many spices on it">
+                    </a>
                     <p>Raw chicken with many spices on it.</p>
 
-                    <img src="images/tikkamasala_4.jpg" alt="Spices mixed together with the chicken.">
+
+                    <a href="images/tikkamasala_4.jpg" data-lightbox="tikkamasala"
+                        data-title="Spices mixed together with the chicken">
+                        <img src="images/tikkamasala_4.jpg" alt="Spices mixed together with the chicken">
+                    </a>
                     <p>Spices mixed together with the chicken.</p>
 
-                    <img src="images/tikkamasala_5.jpg" alt="An image of pouring boiling water into the sauce.">
+
+                    <a href="images/tikkamasala_5.jpg" data-lightbox="tikkamasala"
+                        data-title="An image of pouring boiling water into the sauce">
+                        <img src="images/tikkamasala_5.jpg" alt="An image of pouring boiling water into the sauce">
+                    </a>
                     <p>An image of pouring boiling water into the sauce.</p>
+
 
                     <p>Rachel Sondergeld</p>
                 </div>
@@ -101,8 +119,12 @@
                     <p>Origin: American</p>
                     <p>Source: Alex Likens</p>
                     <p>Category: Main Dish</p>
-                    <img src="images/peanut-butter-and-jelly-sandwich.jpg" alt="Peanut Butter and Jelly Sandwich"
-                        width="400">
+                    <a href="images/peanut-butter-and-jelly-sandwich.jpg" data-lightbox="sandwich"
+                        data-title="Peanut Butter and Jelly Sandwich">
+                        <img src="images/peanut-butter-and-jelly-sandwich.jpg" alt="Peanut Butter and Jelly Sandwich"
+                            width="400">
+                    </a>
+
                     <p>This is a dish that is great at all times of the year. Its mix of savory flavors with sweet jelly
                         makes it a favorite dish for many people. This dish is great for any situation, whether you are
                         on the go, in a rush, or just looking for a tasty meal at home.</p>
@@ -119,21 +141,34 @@
                     <p>4. Put the two pieces of bread together so they face each other.</p>
 
                     <h3>Additional Food Images</h3>
-                    <img src="images/pbj2.jpg" alt="Peanut Butter and Jelly in the process of being made">
+
+                    <a href="images/pbj2.jpg" data-lightbox="pbj"
+                        data-title="Peanut Butter and Jelly in the process of being made">
+                        <img src="images/pbj2.jpg" alt="Peanut Butter and Jelly in the process of being made"
+                            width="400">
+                    </a>
                     <p>Peanut Butter and Jelly in the process of being made.</p>
 
-                    <img src="images/pbj3.jpg" alt="PBJ finished product 1">
+
+                    <a href="images/pbj3.jpg" data-lightbox="pbj" data-title="PBJ finished product 1">
+                        <img src="images/pbj3.jpg" alt="PBJ finished product 1" width="400">
+                    </a>
                     <p>PBJ finished product 1.</p>
 
-                    <img src="images/pbj4.jpg" alt="PBJ finished product 2">
+
+                    <a href="images/pbj4.jpg" data-lightbox="pbj" data-title="PBJ finished product 2">
+                        <img src="images/pbj4.jpg" alt="PBJ finished product 2" width="400">
+                    </a>
                     <p>PBJ finished product 2.</p>
+
 
                     <p>Alexander Likens</p>
                 </div>
             </div>
         </div>
     </main>
-
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="gallery.js"></script>
 </body>
 
 </html>

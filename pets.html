@@ -7,6 +7,7 @@
     <title>Pets</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lightbox.css">
 </head>
 
 <body>
@@ -19,6 +20,7 @@
             <a href="index.html">Home (Travel)</a>
             <a href="pets.html" class="current">Pets</a>
             <a href="recipes.html">Recipes</a>
+            <button id="colorButton">|Click For Fall Theme|</button>
         </div>
     </nav>
     <main>
@@ -28,7 +30,10 @@
                 <div class="grid-item">
 
                     <h2>Rosie</h2>
-                    <img src="images/rosie.PNG" alt="Rosie the Dog" width="400">
+                    <a href="images/rosie.PNG" data-lightbox="pics" data-title="Rosie the Dog">
+                        <img src="images/rosie.PNG" alt="Rosie the Dog" width="400">
+                    </a>
+
                     <p>Brown and White Bichon/Shih Tzu mix</p>
                     <p>Rosie is a small but super energetic dog. Whenever someone comes to the house, she is very quick
                         to
@@ -45,17 +50,31 @@
                         be pet, so she will always be right up on you.</p>
 
                     <h3>Photo Gallery</h3>
-                    <img class="post" src="images/rosie_sleeping.jpg" width="200" alt="Rosie sleeping upside down">
+                    <a href="images/rosie_sleeping.jpg" data-lightbox="pics" data-title="Rosie sleeping upside down">
+                        <img class="post" src="images/rosie_sleeping.jpg" alt="Rosie sleeping upside down" width="400">
+                    </a>
+
                     <p>Rosie sleeping upside down</p>
 
-                    <img class="post" src="images/rosie_blanket.jpg" width="200"
-                        alt="Rosie sleeping in between someone's legs">
+                    <a href="images/rosie_blanket.jpg" data-lightbox="pics"
+                        data-title="Rosie sleeping in between someone's legs">
+                        <img class="post" src="images/rosie_blanket.jpg" alt="Rosie sleeping in between someone's legs"
+                            width="400">
+                    </a>
+
+
                     <p>Rosie sleeping in between someone's legs</p>
 
-                    <img class="post" src="images/rosie_table.jpg" width="200" alt="Rosie laying on a table">
+                    <a href="images/rosie_table.jpg" data-lightbox="pics" data-title="Rosie laying on a table">
+                        <img class="post" src="images/rosie_table.jpg" alt="Rosie laying on a table" width="400">
+                    </a>
+
                     <p>Rosie laying on a table</p>
 
-                    <img class="post" src="images/rosie_towel.jpg" width="200" alt="Rosie wrapped in a towel">
+                    <a href="images/rosie_towel.jpg" data-lightbox="pics" data-title="Rosie wrapped in a towel">
+                        <img class="post" src="images/rosie_towel.jpg" alt="Rosie wrapped in a towel" width="400">
+                    </a>
+
                     <p>Rosie wrapped in a towel</p>
 
                     <h3>Likes</h3>
@@ -74,8 +93,12 @@
 
 
                         <h2 style="font-size: 20px" class="likes2">Terry</h2>
-                        <img src="images/terry_sitting.jpg" width="400"
-                            alt="Black dachshund wearing leash and sitting.">
+                        <a href="images/terry_sitting.jpg" data-lightbox="pics"
+                            data-title="Black dachshund wearing leash and sitting.">
+                            <img src="images/terry_sitting.jpg" alt="Black dachshund wearing leash and sitting."
+                                width="400">
+                        </a>
+
                         <p class="likes">Terry is a playful and spirited dachshund that loves to play fetch with his
                             bone or tennis ball.
                             He loves wandering in forests and finding large sticks to take home. His favorite foods
@@ -89,14 +112,33 @@
                             however,
                             he quickly recovered and has been doing great since.</p>
                         <h3 class="likes">Photo Gallery</h3>
-                        <img class="post" src="images/terry_beach.jpg" width="200"
-                            alt="Black dachshund wearing sunglasses at a beach.">
-                        <img class="post" src="images/terry_stick.jpg" width="200"
-                            alt="Black dachshund holding stick at lake on rocks.">
-                        <img class="post" src="images/terry_minion.jpg" width="200"
-                            alt="Black dachshund wearing a Minion costume.">
-                        <img class="post" src="images/terry_reed.jpg" width="200"
-                            alt="Black dachshund holding a reed on street.">
+
+                        <a href="images/terry_beach.jpg" data-lightbox="terry"
+                            data-title="Black dachshund wearing sunglasses at a beach">
+                            <img class="post" src="images/terry_beach.jpg"
+                                alt="Black dachshund wearing sunglasses at a beach" width="400">
+                        </a>
+
+
+                        <a href="images/terry_stick.jpg" data-lightbox="terry"
+                            data-title="Black dachshund holding a stick at a lake on rocks">
+                            <img class="post" src="images/terry_stick.jpg"
+                                alt="Black dachshund holding a stick at a lake on rocks" width="400">
+                        </a>
+
+
+                        <a href="images/terry_minion.jpg" data-lightbox="terry"
+                            data-title="Black dachshund wearing a Minion costume">
+                            <img class="post" src="images/terry_minion.jpg"
+                                alt="Black dachshund wearing a Minion costume" width="400">
+                        </a>
+
+                        <a href="images/terry_reed.jpg" data-lightbox="terry"
+                            data-title="Black dachshund holding a reed on the street">
+                            <img class="post" src="images/terry_reed.jpg"
+                                alt="Black dachshund holding a reed on the street" width="400">
+                        </a>
+
                         <h3 class="likes2">Likes</h3>
                         <p>Fetch, Eating, Belly Rubs</p>
                         <!--Alex Mitchell and Matthew Inda-->
@@ -105,6 +147,8 @@
                     </div>
                 </div>
     </main>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="gallery.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,58 @@
 .skip-link {
- 
+
     font-size: 16px;
 
 }
 
-@media screen and (max-width: 700px) {
-    button {
-        font-size: 14px;
+
+button {
+    font-size: 14px;
+}
+
+.skip-link {
+    display: none;
+}
+
+
+
+/*tablet view */
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+    h1 {
+        font-size: 25px;
     }
 
-    .skip-link {
-        display: none;
+    h2,
+    h3 {
+        font-size: 22px;
     }
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 22px;
+    }
+
+    .grid-item {
+        padding: 10px;
+
+        opacity: 0;
+        animation: fade 1.6s ease-in-out forwards;
+
+    }
+
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(19px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes Pulsing {
@@ -41,15 +81,6 @@ h1 {
     animation: Pulsing 1s infinite;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    h1 {
-        animation: none;
-    }
-
-    img.gif-image {
-        display: none;
-    }
-}
 
 h2,
 h3 {
@@ -72,10 +103,49 @@ p {
 
 }
 
+@media (prefers-reduced-motion: reduce) {
+    img.gif-image {
+        display: none;
+        margin: 0 auto;
+    }
+
+    img.nongif-image {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media not (prefers-reduced-motion: reduce) {
+    img.gif-image {
+        display: block;
+        text-align: center;
+
+        margin: 0 auto;
+
+    }
+
+    img.nongif-image {
+        display: none;
+        text-align: center;
+
+        margin: 0 auto;
+
+    }
+
+}
+
 img {
     border: 5px solid #ff9a8b;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+img:hover {
+    transform: scale(1.09);
+    transition: transform 0.25s ease;
 }
 
 nav {
@@ -84,6 +154,9 @@ nav {
     margin: 20px 20px 20px 20px;
 
 }
+
+
+
 
 li {
     display: inline-block;
@@ -119,10 +192,18 @@ nav a {
 }
 
 
-@media screen and (min-width: 701px) {
+
+@media screen and (min-width: 1201px) {
 
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .button-container {
+        background-image: url('../images/nav_back1.png');
+        background-size: cover;
+
+        background-position: center;
+
+    }
 }

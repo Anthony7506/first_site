@@ -1,17 +1,19 @@
 .skip-link {
-
-    font-size: 16px;
-
+    position: absolute;
+    top: -500px;
 }
 
+.skip-link:focus {
+    top: 10px;
+    font-size: 20px;
+    position: relative;
+    padding: 20px;
+}
 
 button {
     font-size: 14px;
 }
 
-.skip-link {
-    display: none;
-}
 
 
 

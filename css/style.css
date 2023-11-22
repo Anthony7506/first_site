@@ -1,3 +1,30 @@
+@keyframes Pulsing {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 .skip-link {
     position: absolute;
     top: -500px;
@@ -27,51 +54,6 @@ img {
     width: 75px;
 
 }
-
-@keyframes Pulsing {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
-
-/*tablet view */
-@media screen and (min-width: 701px) and (max-width: 1200px) {
-    h1 {
-        font-size: 25px;
-    }
-
-    h2,
-    h3 {
-        font-size: 22px;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 22px;
-    }
-
-    .grid-item {
-        padding: 10px;
-
-        opacity: 0;
-        animation: fade 1.6s ease-in-out forwards;
-
-    }
-
-}
-
 
 
 
@@ -118,10 +100,6 @@ img {
     padding: 4px;
 }
 
-img:hover {
-    transform: scale(1.09);
-    transition: transform 0.25s ease;
-}
 
 nav {
     border: 2px solid black;
@@ -129,9 +107,6 @@ nav {
     margin: 20px 20px 20px 20px;
 
 }
-
-
-
 
 li {
     display: inline-block;
@@ -166,27 +141,47 @@ nav a {
     text-align: center;
 }
 
-@keyframes fade {
-    0% {
-        opacity: 0;
-        transform: translateY(18px);
+
+
+
+
+/*tablet view */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 25px;
     }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+    h2,
+    h3 {
+        font-size: 22px;
     }
-}
-
-.grid-item img:first-child {
-    animation: fade 3.2s ease-in-out forwards;
-}
-
-@media screen and (min-width: 1201px) {
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 22px;
+    }
+
+    .grid-item {
+        padding: 10px;
+
+        opacity: 0;
+        animation: fade 1.6s ease-in-out forwards;
+
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    img:hover {
+        transform: scale(1.09);
+        transition: transform 0.25s ease;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
 
         gap: 22px;
     }
@@ -284,4 +279,11 @@ nav a {
 
     }
 
+    .grid-item {
+        padding: 10px;
+
+        opacity: 0;
+        animation: fade 1.6s ease-in-out forwards;
+
+    }
 }

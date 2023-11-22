@@ -87,6 +87,12 @@ ul {
 
 }
 
+li {
+    font-family: 'Brawler', serif;
+    line-height: 1.6;
+
+}
+
 .button-container {
     font-family: 'Brawler', serif;
     background-color: #0d53a9;
@@ -236,6 +242,11 @@ nav a {
     }
 
     ul {
+        font-size: 22px;
+
+    }
+
+    li {
         font-size: 22px;
 
     }

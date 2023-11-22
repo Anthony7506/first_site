@@ -28,6 +28,21 @@ img {
 
 }
 
+@keyframes Pulsing {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 
 /*tablet view */
 @media screen and (min-width: 701px) and (max-width: 1200px) {
@@ -57,31 +72,8 @@ img {
 
 }
 
-@keyframes fade {
-    0% {
-        opacity: 0;
-        transform: translateY(19px);
-    }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-@keyframes Pulsing {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
 
 h1 {
     font-family: 'Brawler', serif;
@@ -117,38 +109,6 @@ p {
 
 }
 
-@media (prefers-reduced-motion: reduce) {
-    img.gif-image {
-        display: none;
-        margin: 0 auto;
-    }
-
-    img.nongif-image {
-        display: block;
-        margin: 0 auto;
-    }
-
-
-}
-
-@media not (prefers-reduced-motion: reduce) {
-    img.gif-image {
-        display: block;
-        text-align: center;
-
-        margin: 0 auto;
-
-    }
-
-    img.nongif-image {
-        display: none;
-        text-align: center;
-
-        margin: 0 auto;
-
-    }
-
-}
 
 img {
     border: 5px solid #ff9a8b;
@@ -206,12 +166,37 @@ nav a {
     text-align: center;
 }
 
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grid-item img:first-child {
+    animation: fade 3.2s ease-in-out forwards;
+}
 
 @media screen and (min-width: 1201px) {
 
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(1fr, 1fr);
+
+        gap: 22px;
+    }
+
+    .grid-item {
+        padding: 10px;
+
+        opacity: 0;
+        animation: fade 1.6s ease-in-out forwards;
+
     }
 
     .button-container {
@@ -229,4 +214,74 @@ nav a {
         width: 500px;
         padding: 4px;
     }
+
+    h1 {
+        font-family: 'Brawler', serif;
+        font-size: 38px;
+        color: #438fed;
+        padding: 10px 20px;
+        border: 2px solid #438fed;
+        border-radius: 15px;
+        margin: 20px 20px 20px 20px;
+        transition: transform 0.3s, color 0.3s;
+        animation: Pulsing 1s infinite;
+    }
+
+
+    h2,
+    h3 {
+        font-size: 32px;
+    }
+
+    p {
+
+        font-size: 22px;
+
+    }
+
+    nav {
+        font-size: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    img.gif-image {
+        display: none;
+        margin: 0 auto;
+    }
+
+    img.nongif-image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .button-container,
+    .grid-item img:first-child,
+    h1,
+    h2,
+    h3,
+    p,
+    nav {
+        animation-play-state: paused;
+    }
+
+}
+
+@media not (prefers-reduced-motion: reduce) {
+    img.gif-image {
+        display: block;
+        text-align: center;
+
+        margin: 0 auto;
+
+    }
+
+    img.nongif-image {
+        display: none;
+        text-align: center;
+
+        margin: 0 auto;
+
+    }
+
 }

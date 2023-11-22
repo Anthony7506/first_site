@@ -10,5 +10,11 @@ function changeBackgroundColor() {
         document.body.style.backgroundColor = colors[currColor];
     }
 }
-document.getElementById("colorButton").addEventListener("click", changeBackgroundColor);
 
+function changeTextColor() {
+    const myColor = document.getElementById("inputColor").value;
+    document.body.style.color = myColor;
+}
+
+document.getElementById("colorButton").addEventListener("click", changeBackgroundColor);
+document.getElementById("inputColor").addEventListener("input", changeTextColor);

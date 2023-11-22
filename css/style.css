@@ -139,6 +139,7 @@ nav a {
     background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
+    animation: fade 0.01s ease-in-out forwards;
 }
 
 
@@ -166,18 +167,13 @@ nav a {
     .grid-item {
         padding: 10px;
 
-        opacity: 0;
-
 
     }
 
 }
 
 @media screen and (min-width: 992px) {
-    img:hover {
-        transform: scale(1.09);
-        transition: transform 0.25s ease;
-    }
+
 
     .grid-container {
         display: grid;
@@ -189,7 +185,6 @@ nav a {
     .grid-item {
         padding: 10px;
 
-        opacity: 0;
 
 
     }
@@ -252,6 +247,7 @@ nav a {
 
     .button-container,
     .grid-item img:first-child,
+    img:hover,
     h1,
     h2,
     h3,
@@ -260,8 +256,9 @@ nav a {
         animation-play-state: paused;
     }
 
-    .grid-item {
-        animation-play-state: paused;
+    img:hover {
+        transform: scale(1.09);
+
     }
 }
 
@@ -288,5 +285,10 @@ nav a {
         opacity: 0;
         animation: fade 1.6s ease-in-out forwards;
 
+    }
+
+    img:hover {
+        transform: scale(1.09);
+        transition: transform 0.25s ease;
     }
 }
